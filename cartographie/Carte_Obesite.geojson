@@ -1,6 +1,6 @@
 {
  "type": "FeatureCollection",
- "date_maj": "07/09/2026",
+ "date_maj": "04/10/2026",
  "features": [
   {
    "type": "Feature",
@@ -2884,6 +2884,24 @@
     "fiche": "| :fa-info:#A2368F:|**Identification**|\n| ---- | ---- |\n| :fa-map-o::#A2368F:|59 rue Jean Macé<br>29200 Brest <br>France|\n| :fa-instagram::#A2368F:|[Instagram](https://www.instagram.com/entre.mer.brest/)|\n| :fa-refresh::#A2368F:|Fiche Maj le 18/05/2026|\n\n** :fa-newspaper-o: Commentaires** <br>\nIls comprennent bien les impératifs des opérés bariatriques et des patients sous TMO. Toujours prêt à proposer un doggy. Demandez Eddy.<br> Olivier",
     "region": "Bretagne",
     "date_maj": "18/05/2026"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.1620832416371316,
+     50.76819592520652
+    ]
+   },
+   "properties": {
+    "type": "restaurant",
+    "nom": "ESTAMINET DU CHEMIN VERT",
+    "logo": "054Estaminetcheminvert.jpg",
+    "fiche": "| :fa-info:#A2368F:|**Identification**|\n| ---- | ---- |\n| :fa-map-o::#A2368F:|102 Rue du Dronckaert<br>59960 Neuville-en-Ferrain <br>France|\n| :fa-book::#A2368F:|restaurant flamand traditionnel|\n| :fa-chain::#A2368F:|[Site Web](www.estaminetducheminvert.com)|\n| :fa-facebook-official::#A2368F:|[FaceBook](https://www.facebook.com/estaminetduchemin.vert/)|\n| :fa-refresh::#A2368F:|Fiche Maj le 04/10/2026|\n\n** :fa-newspaper-o: Commentaires** <br>\nJ'ai oublié ma carte à la maison mais je leur ai expliqué mon cas et j'ai reçu un menu [..] succulent et bien assez pour mon petit estomac.\nSandra",
+    "region": "Hauts-de-France",
+    "date_maj": "04/10/2026"
    }
   }
  ]

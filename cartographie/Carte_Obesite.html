@@ -176,8 +176,6 @@
   .modal-bar button{border:1px solid var(--line);background:#fff;cursor:pointer;border-radius:8px;padding:7px 11px;font:inherit;font-size:12px;font-weight:600;color:var(--slate);display:inline-flex;align-items:center;gap:6px;}
   .modal-bar button.close{width:34px;height:34px;justify-content:center;padding:0;font-size:18px;}
   .modal .fiche{max-height:none;padding:16px 22px 26px;font-size:14px;}
-  footer{background:#fff;border-top:1px solid var(--line);font-size:11px;color:var(--muted);padding:7px 18px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;}
-  #foot-date{color:var(--violet);font-weight:600;}
   .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--slate);color:#fff;padding:12px 18px;border-radius:10px;font-size:12.5px;max-width:90%;text-align:center;line-height:1.4;opacity:0;transition:opacity .25s;pointer-events:none;z-index:4000;box-shadow:0 6px 20px rgba(0,0,0,.3);}
   .toast.show{opacity:1;}
   .guide-overlay{display:none;position:fixed;inset:0;background:rgba(20,28,45,.6);backdrop-filter:blur(2px);z-index:3500;align-items:center;justify-content:center;padding:16px;}
@@ -211,6 +209,7 @@
   #install-invite{border-left:4px solid var(--violet);} #kofi-banner{border-left:4px solid #72a4f2;}
   @media (max-width:600px){.leaflet-popup-content{width:220px !important;}.modal{padding:0;}.modal-box{border-radius:0;height:100vh;height:100dvh;max-height:100dvh;}.modal-bar{padding-top:calc(12px + env(safe-area-inset-top,0px));}.guide-tab span{display:none;}}
 </style>
+<script data-goatcounter="https://ot78.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
 <div id="adresse-ko"><div class="ko-box"><div class="ko-t">Adresse incorrecte</div><div class="ko-s">Cette adresse ne permet pas d'afficher la carte.</div></div></div>
@@ -310,7 +309,7 @@
         <p><b>J'ai un restaurant, comment être affiché sur la carte&nbsp;?</b><br>Demandez-le moi tout simplement, c'est gratuit. Vous vous engagez cependant à bien accueillir des personnes en souffrance… et faites passer le mot à votre équipe en salle.</p>
         </div>
       </div>
-      <div class="guide-tab-content" id="content-config"><h4>⚙️ Configuration</h4><div id="cfg-install-wrap" style="display:none;margin-bottom:12px;"><button class="ap-btn" id="cfg-install" type="button">📲 Installer l&rsquo;application sur cet appareil</button></div><div class="cfg-sub">📅 Mises à jour depuis</div><input type="range" id="date-slider" style="width:100%;accent-color:var(--violet);"><div style="text-align:center;font-size:12px;color:var(--slate);margin:2px 0;">Depuis le <b id="date-slider-lab">—</b></div><p style="font-size:11px;color:var(--muted);text-align:center;margin:0 0 4px;">Masque les fiches mises à jour avant cette date.</p><div class="ap-sep"></div><button class="ap-btn" id="cfg-reg-modal" type="button">🗺️ Choisissez les raccourcis de sélection</button><div class="ap-sep"></div><div class="cfg-sub">Restaurants</div><label class="tgl"><input type="checkbox" id="cfg-menu-baria"><span>Menu Bariatrique</span></label><p style="font-size:11px;color:var(--muted);margin:2px 0 0 46px;">Afficher uniquement les restaurants avec un menu bariatrique.</p><div class="ap-sep"></div><div id="cfg-assoc"><div id="cfg-toggles"></div><div class="ap-sep"></div></div><div class="cfg-sub">Recherche de ville — pays inclus</div><div id="cfg-pays" class="pays-row"></div><div class="ap-sep"></div><div class="cfg-sub">Nouveautés</div><label class="tgl"><input type="checkbox" id="cfg-news-on"><span>Afficher « Dernières nouveautés au démarrage »</span></label><div style="margin-top:8px;"><button class="ap-btn" id="cfg-news-see" type="button">✨ Voir les nouveautés</button></div><div class="ap-sep"></div><div class="cfg-sub">🔒 Confidentialité</div><p style="font-size:12.5px;color:#374151;line-height:1.5;margin:0;">Vos données restent sur votre appareil. Aucune information n'est envoyée à un serveur. Nous ne collectons rien.</p><div class="ap-sep"></div><button class="ap-btn" id="cfg-reset" type="button" style="border-color:#f0d0d0;color:#c0392b;">♻️ Réinitialiser l&rsquo;application</button><p style="font-size:11px;color:var(--muted);margin-top:2px;">Déconnecte le service worker, vide le cache et efface les réglages locaux, puis recharge. Vos données en ligne ne sont pas touchées.</p></div>
+      <div class="guide-tab-content" id="content-config"><h4>⚙️ Configuration</h4><div id="cfg-install-wrap" style="display:none;margin-bottom:12px;"><button class="ap-btn" id="cfg-install" type="button">📲 Installer l&rsquo;application sur cet appareil</button></div><div class="cfg-sub">📅 Mises à jour depuis</div><input type="range" id="date-slider" style="width:100%;accent-color:var(--violet);"><div style="text-align:center;font-size:12px;color:var(--slate);margin:2px 0;">Depuis le <b id="date-slider-lab">—</b></div><p style="font-size:11px;color:var(--muted);text-align:center;margin:0 0 4px;">Masque les fiches mises à jour avant cette date.</p><div class="ap-sep"></div><button class="ap-btn" id="cfg-reg-modal" type="button">🗺️ Choisissez les raccourcis de sélection</button><div class="ap-sep"></div><div class="cfg-sub">Restaurants</div><label class="tgl"><input type="checkbox" id="cfg-menu-baria"><span>Menu Bariatrique</span></label><p style="font-size:11px;color:var(--muted);margin:2px 0 0 46px;">Afficher uniquement les restaurants avec un menu bariatrique.</p><div class="ap-sep"></div><div id="cfg-assoc"><div id="cfg-toggles"></div><div class="ap-sep"></div></div><div class="cfg-sub">Recherche de ville — pays inclus</div><div id="cfg-pays" class="pays-row"></div><div class="ap-sep"></div><div class="cfg-sub">Nouveautés</div><label class="tgl"><input type="checkbox" id="cfg-news-on"><span>Afficher « Dernières nouveautés au démarrage »</span></label><div style="margin-top:8px;"><button class="ap-btn" id="cfg-news-see" type="button">✨ Voir les nouveautés</button></div><div class="ap-sep"></div><button class="ap-btn" id="cfg-reset" type="button" style="border-color:#f0d0d0;color:#c0392b;">♻️ Réinitialiser l&rsquo;application</button><p style="font-size:11px;color:var(--muted);margin-top:2px;">Déconnecte le service worker, vide le cache et efface les réglages locaux, puis recharge. Vos données en ligne ne sont pas touchées.</p></div>
       <div class="guide-tab-content" id="content-apropos">
         <h4>ℹ️ À propos</h4>
         <p>Ceci est une application de patients pour des patients ou des professionnels de santé qui souhaitent partager des ressources utiles.</p>
@@ -346,6 +345,10 @@
           <li>Diffusion des bibliothèques — <a href="https://cdnjs.com/" target="_blank" rel="noopener">cdnjs</a> (Cloudflare)</li>
         </ul>
         <p id="res-logos-assoc" style="font-size:12px;color:var(--muted);margin-top:8px;">Les logos des associations sont fournis par les associations elles-mêmes et restent leur propriété.</p>
+        <div class="ap-sep"></div>
+        <h4>🔒 Confidentialité</h4>
+        <p style="font-size:12.5px;color:#374151;line-height:1.5;margin:0;">Vos données personnelles restent sur votre appareil. Seules des informations anonymes d'usage sont collectées, dans le respect des recommandations de la CNIL et en conformité avec le RGPD.</p>
+        <p id="foot-build" style="font-size:11px;color:var(--muted);text-align:center;margin-top:14px;">Build 68</p>
       </div>
     </div>
   </div>
@@ -354,7 +357,6 @@
 <div class="flotte" id="install-invite"><div class="f-txt">📲 Installer l'application sur votre téléphone ?</div><div class="f-row"><button class="f-ghost" id="inv-later" type="button">Plus tard</button><button class="f-yes" id="inv-yes" type="button">Oui, installer</button></div></div>
 <div class="flotte" id="kofi-banner"><div class="f-txt">Cette application est gratuite. Si elle vous aide, un café fait toujours plaisir ☕</div><div class="f-row"><button class="f-ghost" id="kofi-close" type="button">Plus tard</button><button class="f-ghost" id="kofi-done" type="button">J'ai soutenu</button><a class="f-kofi" id="kofi-go" href="https://ko-fi.com/obesiteguidepratique" target="_blank" rel="noopener">☕ Soutenir</a></div></div>
 <div class="toast" id="toast"></div>
-<footer><span id="foot-build">Build 67</span> <span id="foot-date"></span></footer>
 
 <script>
 const MENTION="Données obtenues sur le site : https://obesiteguidepratique.github.io/Cartographie/Carte_Obesite.html";
@@ -515,7 +517,6 @@ function majCompteursGuide(fc){var g1=document.getElementById("guide-nb"),g2=doc
 function chargerFeatures(fc){
   Object.keys(clusters).forEach(function(k){clusters[k].clearLayers();}); markers=[];
   document.getElementById("hint").style.display="none";
-  if(fc.date_maj) document.getElementById("foot-date").textContent="· MàJ données : "+fc.date_maj;
   var z=map.getZoom(), sz=tailleParZoom(z);
   (fc.features||[]).forEach(function(ft){
     var p=ft.properties||{}, co=(ft.geometry&&ft.geometry.coordinates)||[];
