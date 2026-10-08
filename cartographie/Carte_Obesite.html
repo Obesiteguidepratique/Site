@@ -8,14 +8,15 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Baria-ressources">
 <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
-<meta name="description" content="La cartographie des ressources disponibles pour les opérés bariatriques (Belgique / Canada / France / Suisse)">
+<meta name="description" content="La cartographie des restaurants adaptés aux opérés bariatriques (Belgique / Canada / France / Suisse).">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Baria-ressources">
 <meta property="og:title" content="Baria-ressources">
-<meta property="og:description" content="La cartographie des ressources disponibles pour les opérés bariatriques (Belgique / Canada / France / Suisse)">
-<meta property="og:url" content="https://obesiteguidepratique.github.io/Cartographie/Carte_Obesite.html">
-<meta property="og:image" content="https://obesiteguidepratique.github.io/Cartographie/og-image.png">
-<meta property="og:image:secure_url" content="https://obesiteguidepratique.github.io/Cartographie/og-image.png">
+<meta property="og:description" content="La cartographie des restaurants adaptés aux opérés bariatriques (Belgique / Canada / France / Suisse).">
+<link rel="canonical" href="https://obesite-guide-pratique.eu/cartographie/intro.html">
+<meta property="og:url" content="https://obesite-guide-pratique.eu/cartographie/intro.html">
+<meta property="og:image" content="https://obesite-guide-pratique.eu/cartographie/og-image.png">
+<meta property="og:image:secure_url" content="https://obesite-guide-pratique.eu/cartographie/og-image.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:alt" content="Baria-ressources">
 <meta property="og:image:width" content="1200">
@@ -23,9 +24,9 @@
 <meta property="og:locale" content="fr_FR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Baria-ressources">
-<meta name="twitter:description" content="La cartographie des ressources disponibles pour les opérés bariatriques (Belgique / Canada / France / Suisse)">
-<meta name="twitter:image" content="https://obesiteguidepratique.github.io/Cartographie/og-image.png">
-<title>Baria-ressources</title>
+<meta name="twitter:description" content="La cartographie des restaurants adaptés aux opérés bariatriques (Belgique / Canada / France / Suisse).">
+<meta name="twitter:image" content="https://obesite-guide-pratique.eu/cartographie/og-image.png">
+<title>Baria-ressources — Cartographie des ressources pour opérés bariatriques</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
@@ -348,7 +349,7 @@
         <div class="ap-sep"></div>
         <h4>🔒 Confidentialité</h4>
         <p style="font-size:12.5px;color:#374151;line-height:1.5;margin:0;">Vos données personnelles restent sur votre appareil. Seules des informations anonymes d'usage sont collectées, dans le respect des recommandations de la CNIL et en conformité avec le RGPD.</p>
-        <p id="foot-build" style="font-size:11px;color:var(--muted);text-align:center;margin-top:14px;">Build 69</p>
+        <p id="foot-build" style="font-size:11px;color:var(--muted);text-align:center;margin-top:14px;">Build 71</p>
       </div>
     </div>
   </div>
@@ -359,7 +360,7 @@
 <div class="toast" id="toast"></div>
 
 <script>
-const MENTION="Données obtenues sur le site : https://obesiteguidepratique.github.io/Cartographie/Carte_Obesite.html";
+const MENTION="Données obtenues sur le site : https://obesite-guide-pratique.eu/cartographie/Carte_Obesite.html";
 const mstore={get:function(k){try{return JSON.parse(localStorage.getItem("cobmap."+k));}catch(e){return null;}},set:function(k,v){try{localStorage.setItem("cobmap."+k,JSON.stringify(v));}catch(e){}}};
 function saveSettings(){try{mstore.set("settings",{showAll:showAll,cats:catToggle,fond:fondCourant,c:[map.getCenter().lat,map.getCenter().lng],z:map.getZoom()});}catch(e){}}
 var _launch=((mstore.get("launch")||0)+1);mstore.set("launch",_launch);
