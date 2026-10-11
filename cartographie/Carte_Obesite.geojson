@@ -1,6 +1,6 @@
 {
  "type": "FeatureCollection",
- "date_maj": "09/10/2026",
+ "date_maj": "11/10/2026",
  "features": [
   {
    "type": "Feature",
@@ -317,7 +317,7 @@
     "type": "association",
     "nom": "EMBARQUE TA BOUSSOLE",
     "logo": "Embarque.png",
-    "fiche": "| :fa-info:#A2368F:|**Identification**|\n| ---- | ---- |\n| :fa-map-o::#A2368F:|75200 Paris|\n| :fa-envelope::#A2368F:|[Courriel](mailto:embarquetaboussole@gmail.com)|\n| :fa-chain::#A2368F:|[Site Web](https://www.helloasso.com/associations/embarque-ta-boussole)|\n| :fa-instagram::#A2368F:|[Instagram](https://www.instagram.com/embarque_ta_boussole/)|\n| :fa-chain::#A2368F:|[Autre](https://www.linkedin.com/company/association-embarque-ta-boussole/))|\n| :fa-mobile::#A2368F:|07 75 72 39 78|\n| :fa-users::#A2368F:|Public accepté : adultes (à partir de 18 ans)|\n| :fa-circle-o-notch::#A2368F:|Mode d'échanges : visio, groupeWhatsapp et présentiel|\n| :fa-tag::#A2368F:|Affiliation: CNAO|\n| :fa-user::#A2368F:|Composition: association composée uniquement de patients ou personnes concernées ou d'aidants bénévoles|\n| :fa-gear::#A2368F:|W751260910|\n| :fa-calendar::#A2368F:|Enregistrée le 18/05/2021|\n| :fa-refresh::#A2368F:|Fiche Maj le 07/01/2026|\n\n** :fa-newspaper-o: Présentation de l'association**<br>\nrépondre à toute demande d'informations quant à la prise en charge globale de l'obésité, formulée par les personnes directement ou indirectement, confrontées à la problématique du surpoids ; assurer une écoute et une entraide à la personne et ou aux proches.",
+    "fiche": "| :fa-info:#A2368F:|**Identification**|\n| ---- | ---- |\n| :fa-map-o::#A2368F:|75020 Paris|\n| :fa-envelope::#A2368F:|[Courriel](mailto:embarquetaboussole@gmail.com)|\n| :fa-chain::#A2368F:|[Site Web](https://www.helloasso.com/associations/embarque-ta-boussole)|\n| :fa-instagram::#A2368F:|[Instagram](https://www.instagram.com/embarque_ta_boussole/)|\n| :fa-chain::#A2368F:|[Autre](https://www.linkedin.com/company/association-embarque-ta-boussole/))|\n| :fa-mobile::#A2368F:|07 75 72 39 78|\n| :fa-users::#A2368F:|Public accepté : adultes (à partir de 18 ans)|\n| :fa-circle-o-notch::#A2368F:|Mode d'échanges : visio, groupeWhatsapp et présentiel|\n| :fa-tag::#A2368F:|Affiliation: CNAO|\n| :fa-user::#A2368F:|Composition: association composée uniquement de patients ou personnes concernées ou d'aidants bénévoles|\n| :fa-gear::#A2368F:|W751260910|\n| :fa-calendar::#A2368F:|Enregistrée le 18/05/2021|\n| :fa-refresh::#A2368F:|Fiche Maj le 07/01/2026|\n\n** :fa-newspaper-o: Présentation de l'association**<br>\nrépondre à toute demande d'informations quant à la prise en charge globale de l'obésité, formulée par les personnes directement ou indirectement, confrontées à la problématique du surpoids ; assurer une écoute et une entraide à la personne et ou aux proches.",
     "region": "Île-de-France",
     "date_maj": "07/01/2026",
     "adultes": "oui"
