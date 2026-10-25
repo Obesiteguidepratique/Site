@@ -252,8 +252,8 @@ details.commentaire p,details.commentaire ul{margin:10px 0 2px}
         <li>Favoriser la mise en lien et la coopération entre associations de patients et centres de soins.</li>
         <li>Offrir un outil aux CSO pour relayer les messages clés (notamment l’importance d’un parcours personnalisé pluridisciplinaire) en raison de la chronicité de la maladie, et contribuer à limiter les perdus de vue.</li>
       </ul>
-      <p>Cette carte se veut la plus exhaustive possible. Elle est indépendante de tout enjeu institutionnel ou politique.</p>
-      <p>Il existe deux associations nationales&nbsp;: <a href="https://cnao.fr" target="_blank" rel="noopener">CNAO.fr</a> (Collectif National des Associations d’Obèses) et la Ligue nationale Contre l’Obésité <a href="https://liguecontrelobesite.org/" target="_blank" rel="noopener">liguecontrelobesite.org</a> qui accueillent l’adhésion d’associations de patients locales, et qui proposent des informations et des ressources fiables.</p>
+      <p>Cette carte se veut la plus exhaustive possible. Elle est indépendante de tout enjeu institutionnel ou politique. <a id="lienMailCarte" href="#">Contactez-moi</a> s’il en manque.</p>
+      <p>Il existe deux associations nationales&nbsp;: <a href="https://cnao.fr" target="_blank" rel="noopener">CNAO.fr</a> (Collectif National des Associations de patients en obésité) et la Ligue nationale Contre l’Obésité <a href="https://liguecontrelobesite.org/" target="_blank" rel="noopener">liguecontrelobesite.org</a> qui accueillent l’adhésion d’associations de patients locales, et qui proposent des informations et des ressources fiables.</p>
       <ul class="liens boutons pleine-largeur">
         <li><a class="bouton-lien" href="https://macarte.ign.fr/carte/9vPUdF/Associations-de-soutien-et-d-informations-pour-les-personnes-souffrant-d-obesite-" target="_blank" rel="noopener"><span class="bl-ico" aria-hidden="true">🔗</span><span class="bl-txt"><span class="bl-titre">Ouvrir la carte en plein écran</span></span></a></li>
       </ul>
@@ -282,7 +282,7 @@ details.commentaire p,details.commentaire ul{margin:10px 0 2px}
 <script>
 // Adresse courriel assemblée à l'exécution (limite le moissonnage par les robots).
 (function(){
-  ['lienMailFooter'].forEach(function(id){
+  ['lienMailFooter','lienMailCarte'].forEach(function(id){
     var a=document.getElementById(id);
     if(a){a.href='mail'+'to:'+['otyrbasbaria','sfr.fr'].join('@');}
   });
