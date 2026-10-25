@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#A2368F">
+<link rel="icon" type="image/jpeg" href="../assets/images/logo.jpg">
+<link rel="apple-touch-icon" href="../assets/images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Articles publiés — Obésité guide pratique</title>
+<meta name="description" content="Articles publiés à partir des enquêtes « Les obésités : Partage de réalités » : obésité féminine et cartographie des restaurants.">
+<link rel="canonical" href="https://obesite-guide-pratique.eu/articles/articles.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Obésité guide pratique">
+<meta property="og:title" content="Articles publiés — Obésité guide pratique">
+<meta property="og:description" content="Articles publiés à partir des enquêtes « Les obésités : Partage de réalités » : obésité féminine et cartographie des restaurants.">
+<meta property="og:url" content="https://obesite-guide-pratique.eu/articles/articles.html">
+<meta property="og:image" content="https://obesite-guide-pratique.eu/assets/images/og-image.jpg">
+<meta property="og:image:alt" content="Couverture du livre Obésité guide pratique patients">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="google-site-verification" content="HBQBaR8UgW7MWuEOXFXHNWT3NqfrOIzNEeGcovfMqNk" />
+<style>
+/* ===== CHARTE GRAPHIQUE (à respecter pour tout le site) =====
+   Couleur principale : violet #A2368F  |  violet foncé #69235D  |  turquoise #0e8a7d
+   Titres : Fraunces (serif), violet        Texte : Work Sans, gris très foncé #1c2230
+   Gras normal          : <strong>texte</strong>
+   Gras violet          : <strong class="v">texte</strong>
+   Italique             : <em>texte</em>
+   Surligné             : <mark>texte</mark>
+   Petit texte gris     : <span class="note">texte</span>
+   ========================================================== */
+:root{
+  --lav-gris:#919BA2; --lav-jaune:#DED79E; --lav-bleu:#7BBBD7;
+  --violet:#A2368F; --violet-dark:#69235D; --violet-soft:#f7ecf5;
+  --teal:#0e8a7d; --ink:#1c2230; --paper:#f6f7f9; --card:#fff;
+  --muted:#6b7280; --line:#e3e6ec; --shadow:0 18px 50px -20px rgba(20,28,45,.35);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;color:var(--ink);position:relative;
+  font-family:'Work Sans',system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.65;font-size:1.02rem;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:linear-gradient(180deg, rgba(145,155,162,.22) 0%, rgba(222,215,158,.28) 48%, rgba(123,187,215,.24) 100%), #fff}
+h1,h2,h3{font-family:'Work Sans',system-ui,sans-serif;letter-spacing:-.01em}
+section h1,section h2{font-family:'Roboto',system-ui,sans-serif;letter-spacing:0}
+a{color:var(--violet);text-underline-offset:2px}
+a:hover{color:var(--violet-dark)}
+.wrap{max-width:860px;margin:0 auto;padding:0 28px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--violet);color:#fff;padding:8px 14px;border-radius:8px;z-index:100}
+.skip:focus{left:8px;color:#fff}
+
+/* ---- En-tête : logo + menu horizontal (collant en haut de page), violet de la charte ---- */
+.topbar{position:sticky;top:0;z-index:60;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+/* Bandeau : violet 100 % en haut, fondu vers la transparence en bas */
+.topbar::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,var(--violet-dark) 0%,var(--violet) 100%);-webkit-mask-image:linear-gradient(180deg,#000 0%,#000 45%,rgba(0,0,0,.72) 100%);mask-image:linear-gradient(180deg,#000 0%,#000 45%,rgba(0,0,0,.72) 100%)}
+.topbar-in{display:flex;align-items:center;gap:14px;max-width:1100px;margin:0 auto;padding:8px 16px;min-height:66px}
+.brand{display:flex;align-items:center;gap:12px;flex:none;text-decoration:none;color:#fff}
+.brand:hover{color:#fff}
+.brand img{width:44px;height:44px;border-radius:50%;border:2.5px solid var(--teal);box-shadow:0 4px 12px rgba(20,28,45,.35);object-fit:cover;display:block;background:#fff}
+nav.menu{flex:1}
+@media (min-width:1121px){.topbar-in{display:grid;grid-template-columns:1fr auto 1fr}nav.menu{flex:none;margin:0}}
+nav.menu ul{list-style:none;margin:0;padding:0;display:flex;align-items:center;justify-content:center;gap:2px}
+nav.menu a{display:block;text-align:center;position:relative;padding:10px 12px;border-radius:10px;color:#fff;text-decoration:none;font-weight:600;font-size:.94rem;line-height:1.2;white-space:nowrap}
+nav.menu a::after{content:"";position:absolute;left:12px;right:12px;bottom:3px;height:3px;border-radius:2px;background:#fff;transform:scaleX(0);transition:transform .2s ease}
+nav.menu a:hover{background:rgba(255,255,255,.18);color:#fff}
+nav.menu a[aria-current="page"]{color:#fff;font-weight:700}
+nav.menu a[aria-current="page"]::after{transform:scaleX(1)}
+nav.menu .ne{display:none}
+.topbar :focus-visible{outline-color:#fff}
+.menu-toggle{display:none;margin-left:auto;align-items:center;gap:8px;padding:8px 14px;border:1px solid rgba(255,255,255,.5);border-radius:22px;background:rgba(255,255,255,.16);color:#fff;font:inherit;font-weight:700;font-size:.92rem;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.menu-toggle:hover{background:rgba(255,255,255,.28)}
+@media (max-width:1120px){
+  .menu-toggle{display:inline-flex}
+  nav.menu{position:absolute;left:0;right:0;top:100%;margin:0;display:none;background:rgba(105,35,93,.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 18px 30px -16px rgba(20,28,45,.55);padding:8px 12px 14px}
+  nav.menu.ouvert{display:block}
+  nav.menu ul{flex-direction:column;align-items:stretch;gap:2px}
+  nav.menu a{display:flex;align-items:center;justify-content:center;gap:8px;padding:12px 14px;font-size:1rem;white-space:normal;text-align:center}
+  nav.menu a::after{display:none}
+  nav.menu .ne{display:inline-block;flex:none;text-align:center;font-size:1.3rem;line-height:1}
+  nav.menu a[aria-current="page"]{background:#fff;color:var(--violet-dark)}
+  nav.menu a[aria-current="page"]:hover{background:#fff;color:var(--violet-dark)}
+}
+@media (max-width:460px){
+  .topbar-in{gap:10px;padding:8px 12px}
+  .brand{gap:10px}
+  }
+@media (prefers-reduced-motion:reduce){nav.menu a::after{transition:none}}
+footer p{margin:0}
+footer .footer-icones{margin-top:0;display:flex;justify-content:center;gap:18px}
+footer .footer-icones a{color:var(--muted);display:inline-flex}
+footer .footer-icones a:hover{color:var(--violet)}
+@media (max-width:700px){.wrap{padding:0 14px}}
+.mentions{font-size:.76rem;line-height:1.5;color:var(--muted);margin:0 auto 18px;max-width:640px;scroll-margin-top:84px}
+.mentions p{margin:0 0 3px}
+
+/* ---- Titres de page ---- */
+.page-title{font-family:'Roboto',system-ui,sans-serif;letter-spacing:0;color:var(--violet-dark);font-weight:800;font-size:clamp(1.55rem,3.8vw,2rem);line-height:1.25;margin:0 0 16px}
+.page-title-accueil{font-weight:700;background:linear-gradient(90deg,var(--violet-dark),var(--teal) 50%,var(--violet-dark));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+
+/* ---- Contenu ---- */
+section{padding:38px 0 4px;scroll-margin-top:84px}
+section h2{color:var(--violet-dark);font-weight:800;font-size:1.4rem;margin:0 0 14px;line-height:1.3}
+.h-ico{margin-right:.35em;font-size:.9em}
+strong.v{color:var(--violet);font-weight:700}
+mark{background:#fbe9f6;color:inherit;padding:0 .15em;border-radius:3px}
+.card{padding:0;margin-bottom:6px}
+.card p:first-child{margin-top:0}
+.intro{display:grid;grid-template-columns:1.25fr .75fr;gap:32px;align-items:center}
+.intro-txt{font-size:1.12rem}
+.intro-img{margin:0;text-align:center}
+.intro-img img{width:100%;max-width:340px;height:auto;display:inline-block}
+/* Sections illustrées : texte + image côte à côte, alternées, comme l’intro */
+.cote{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
+.cote.inverse{grid-template-columns:.8fr 1.2fr}
+.cote.inverse .cote-img{order:-1}
+.cote-img{margin:0;text-align:center}
+.cote-img img{width:100%;max-width:320px;height:auto;border-radius:10px;box-shadow:0 6px 18px -8px rgba(20,28,45,.35);display:inline-block}
+.zoom{border:0;background:none;padding:0;cursor:zoom-in;display:inline-block;max-width:100%;-webkit-tap-highlight-color:transparent}
+.zoom:hover img{transform:scale(1.02)}
+@media (max-width:760px) and (orientation:portrait),(max-width:480px){
+  .cote{grid-template-columns:1fr;gap:16px}
+  .cote .cote-img{order:-1}
+  .cote-img img{max-width:260px}
+}
+.zoom{border:0;background:none;padding:0;cursor:zoom-in;display:inline-block;max-width:100%;-webkit-tap-highlight-color:transparent}
+.zoom:hover img{transform:scale(1.02)}.zoom img{transition:transform .2s ease}
+#lightbox{position:fixed;inset:0;z-index:200;background:rgba(15,10,20,.96);display:none;align-items:center;justify-content:center;padding:16px}
+#lightbox.on{display:flex}
+#lightbox img{max-width:96vw;max-height:94vh;width:auto;height:auto;object-fit:contain;cursor:zoom-out}
+#lightbox .fermer{position:absolute;top:12px;right:14px;width:46px;height:46px;border-radius:50%;border:0;background:#fff;color:var(--violet-dark);font-size:1.6rem;line-height:1;cursor:pointer}
+@media (max-width:760px){.intro{grid-template-columns:1fr;gap:12px}.intro-img img{max-width:250px}}
+ul.liens{list-style:none;margin:10px 0 0;padding:0}
+ul.liens li{padding:9px 0;border-top:1px solid var(--line)}
+ul.liens li:first-child{border-top:none}
+ul.liens.boutons{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+ul.liens.boutons li{padding:0;border-top:0;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+ul.liens.boutons.pleine-largeur{flex-direction:column}
+ul.liens.boutons.pleine-largeur li{width:100%}
+ul.liens.boutons.pleine-largeur .bouton-lien{width:100%;text-align:left;justify-content:flex-start}
+.bouton-lien{display:inline-flex;align-items:center;gap:10px;background:var(--violet);color:#fff;text-decoration:none;font-weight:700;font-size:.92rem;padding:9px 18px;border-radius:20px;border:1px solid transparent;box-shadow:0 10px 22px -12px rgba(162,54,143,.55);transition:background .15s ease,transform .15s ease}
+.bouton-lien:hover{background:var(--violet-dark);transform:translateY(-1px)}
+.bouton-lien .bl-ico{flex:none;font-size:1.15rem;line-height:1}
+.bouton-lien .bl-txt{display:flex;flex-direction:column;text-align:left;line-height:1.28}
+.bouton-lien .bl-maj{font-size:.76rem;font-weight:500;opacity:.85}
+
+/* Vitrine "Où le trouver ?" : couvertures + effet de surbrillance */
+ul.vitrine{list-style:none;margin:16px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px 14px}
+@media (max-width:700px){ul.vitrine{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:380px){ul.vitrine{gap:10px 8px}.v-lien{padding:6px}}
+.v-item{transition:opacity .25s ease}
+.v-lien{display:flex;flex-direction:column;align-items:center;gap:10px;text-decoration:none;color:var(--ink);border-radius:14px;padding:10px;transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+
+ul.vitrine .v-lien img{width:100%;max-width:170px;height:auto;display:block}
+/* Couvertures détourées (PNG transparent) : l’ombre suit le contour du livre, aucun cadre */
+.v-lien img{filter:drop-shadow(0 8px 9px rgba(20,28,45,.38))}
+.v-txt{text-align:center;font-size:.86rem;line-height:1.35}
+.v-txt strong{display:block;color:var(--violet-dark)}
+.v-txt .v-format{display:block;font-weight:600;margin-top:1px}
+.v-txt .note{display:block;margin-top:2px}
+/* survol / sélection (PC avec souris) */
+@media (hover:hover){
+  #vitrine:hover .v-item{opacity:.45}
+  #vitrine:hover .v-item:hover{opacity:1}
+  .v-lien:hover{background:var(--violet-soft)}
+  .v-lien:hover img{transform:scale(1.03)}
+}
+/* sélection au clic/toucher (persiste jusqu'au prochain choix, utile au doigt) */
+#vitrine.choisi .v-item{opacity:.4}
+#vitrine.choisi .v-item.actif{opacity:1}
+.v-item.actif .v-lien{background:var(--violet-soft)}
+.v-lien:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.bouton-lien:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+ul.puces{margin:8px 0 8px 1.2em;padding:0}
+ul.puces li{margin:4px 0}
+.note{font-size:.88rem;color:var(--muted)}
+.btn{display:inline-block;background:var(--violet);color:#fff;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:34px;margin-top:6px;box-shadow:0 16px 32px -16px rgba(162,54,143,.55)}
+.btn:hover{background:var(--violet-dark);color:#fff}
+img.avis{max-width:100%;height:auto;border-radius:12px;margin:8px 0 12px;display:block}
+footer{padding:36px 16px 44px;text-align:center;color:var(--muted);font-size:.84rem;border-top:1px solid var(--line);margin-top:30px}
+.maj-footer{font-size:.86em;color:var(--muted)}
+.artiste{display:inline-flex;align-items:center;gap:3px}
+.artiste .ig-ico{color:var(--violet);vertical-align:-2px}
+:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+
+.carte-cadre{margin:16px 0 8px}
+.carte-cadre iframe{display:block;width:100%;height:560px;border:1px solid var(--line);border-radius:12px;background:#fff}
+@media (max-width:700px){.carte-cadre iframe{height:70vh;min-height:420px}}
+
+/* Articles publiés */
+.art-img{margin:0 0 16px;text-align:center}
+.art-img img{max-width:100%;height:auto;border-radius:10px;box-shadow:0 6px 18px -8px rgba(20,28,45,.35);display:inline-block}
+details.commentaire{margin:16px 0;border:1px solid var(--line);border-radius:10px;padding:10px 14px;background:rgba(255,255,255,.55)}
+details.commentaire summary{cursor:pointer;font-weight:600;color:var(--violet-dark)}
+details.commentaire p,details.commentaire ul{margin:10px 0 2px}
+.sommaire{margin:8px 0 0;padding:14px 18px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.55)}
+.sommaire-titre{margin:0 0 6px;font-weight:700;color:var(--violet-dark)}
+.sommaire ul{list-style:none;margin:0;padding:0}
+.sommaire li{padding:6px 0;border-top:1px solid var(--line)}
+.sommaire li:first-child{border-top:0}
+.sommaire a{text-decoration:none;font-weight:600}
+.sommaire a:hover{text-decoration:underline}
+.retour{margin:14px 0 0;text-align:right;font-size:.88rem}
+</style>
+<noscript><style>.menu-toggle{display:none}nav.menu{display:block;position:static;box-shadow:none;border:0;padding:0 0 8px}nav.menu ul{flex-wrap:wrap}</style></noscript>
+</head>
+<body>
+<a class="skip" href="#contenu-principal">Aller au contenu</a>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="../index.html" aria-label="Obésité guide pratique — accueil">
+      <img src="../assets/images/logo.jpg" width="44" height="44" alt="">
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <span>Menu</span>
+    </button>
+    <nav class="menu" id="menu" aria-label="Navigation principale">
+      <ul>
+        <li><a class="lien" href="../index.html"><span class="ne" aria-hidden="true">📖</span>Accueil</a></li>
+        <li><a class="lien" href="../reponses.html"><span class="ne" aria-hidden="true">🔆</span>Questions-réponses</a></li>
+        <li><a class="lien" href="../commander.html"><span class="ne" aria-hidden="true">🛒</span>Commander</a></li>
+        <li><a class="lien" href="../avis.html"><span class="ne" aria-hidden="true">🥰</span>Avis</a></li>
+        <li><a class="lien" href="../enquetes.html"><span class="ne" aria-hidden="true">🔑</span>Enquêtes</a></li>
+        <li><a class="lien" href="articles.html" aria-current="page"><span class="ne" aria-hidden="true">📰</span>Articles</a></li>
+        <li><a class="lien" href="../cartographie/intro.html"><span class="ne" aria-hidden="true">🗺️</span>Restaurants</a></li>
+        <li><a class="lien" href="../associations.html"><span class="ne" aria-hidden="true">🏡</span>Associations</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu-principal" class="wrap">
+
+  <section id="articles">
+    <h1 class="page-title"><span class="h-ico" aria-hidden="true">📰</span>Articles publiés</h1>
+    <nav class="sommaire" id="sommaire" aria-label="Sommaire">
+      <p class="sommaire-titre">Sommaire</p>
+      <ul>
+        <li><a href="#art-2-3"><span aria-hidden="true">🗺️</span> Cartographie des restaurants · 3/3</a></li>
+        <li><a href="#art-2-2"><span aria-hidden="true">🗺️</span> Cartographie des restaurants · 2/3</a></li>
+        <li><a href="#art-2-1"><span aria-hidden="true">🗺️</span> Cartographie des restaurants · 1/3</a></li>
+        <li><a href="#art-1"><span aria-hidden="true">🌸</span> Obésité féminine&nbsp;: Partage d’expériences</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <section id="art-2-3">
+    <h2><span class="h-ico" aria-hidden="true">🗺️</span>Cartographie des restaurants · 3/3</h2>
+    <div class="card">
+      <figure class="art-img"><button class="zoom" type="button" aria-label="Agrandir l’illustration"><img src="assets/images/article-2-restaurant.webp" width="900" height="506" alt="Smartphone affichant la carte Baria-ressources, posé sur la table d’un restaurant" loading="lazy"></button></figure>
+      <p class="note">(Posts précédents&nbsp;: le restaurant cristallise la difficulté sociale n°1 des opéré·es.)</p>
+      <p>Les attentes exprimées dans mon enquête semblent peu nombreuses&nbsp;: 39 personnes ont spontanément évoqué le restaurant. Mais 39, c’est un plancher, car mon enquête était en texte libre, sans question dédiée. Le restaurant n’est que la pointe émergée d’une difficulté plus vaste, «&nbsp;manger en société&nbsp;», citée par près d’1 opéré sur 4, quel que soit le profil.</p>
+      <p>Ma démarche étant de proposer des réponses concrètes (mon livre est un guide pratique), j’ai détecté 3 axes d’amélioration, car les attentes des opérés sont convergentes et très opérationnelles&nbsp;:<br>
+      1️⃣ des occasions COLLECTIVES entre pairs pour recréer du lien autour du repas<br>
+      2️⃣ une CARTE reconnue (droit à la demi-portion / au doggy bag)<br>
+      3️⃣ des restaurants SENSIBILISÉS</p>
+      <p>Le point 1 est précisément ce qu’une association de patients peut apporter, en complément du soin. On constate d’ailleurs que les opéré·es en lien avec une association ou un pair-aidant se disent un peu plus satisfaits (71&nbsp;% vs 64&nbsp;%) de leur opération. Vous avez sur mon site la <a href="../associations.html">carte des associations</a>, disponible aussi sur le site des GCC/CSO et de la HAS. Partager des repas entre futurs opérés et opérés pourrait être une bonne façon de réduire les freins à l’opération.</p>
+      <p>Je publie cette carte des restaurants comme réponse aux points 2 et 3. Vous y trouverez d’abord les établissements «&nbsp;baria-compatibles&nbsp;», puis ceux qui proposent un menu spécifique pour les opéré·es.</p>
+      <p>Appel aux diététicien·nes et nutritionnistes&nbsp;: votre connaissance des enjeux de la restauration m’aiderait à définir ces menus. 🙏<br>
+      Et vous&nbsp;: vous connaissez un restaurant «&nbsp;baria-compatible&nbsp;»&nbsp;? Signalez-le-moi, il rejoindra la carte.</p>
+      <p>Parce qu’au fond, l’enjeu dépasse le restaurant&nbsp;: c’est de ne pas laisser une peur sociale maintenir quelqu’un dans la maladie.</p>
+      <p><em>Acta est fabula.</em> (Enfin… jusqu’à la prochaine ...)</p>
+      <details class="commentaire">
+        <summary>💬 En commentaire&nbsp;: quelques nuances méthodologiques, pour les curieux</summary>
+        <ul class="puces">
+          <li><strong>Âge&nbsp;:</strong> je n’ai pas trouvé de différence liée à l’âge sur ce sujet.</li>
+          <li><strong>France / Québec&nbsp;:</strong> sur la fréquence, aucune différence (cf. post 2). Sur la nature des préoccupations, une nuance est possible — à confirmer avec plus de données&nbsp;: au Québec, elles pourraient tourner autour des soupers entre amis et de l’accès aux menus&nbsp;; en France, davantage autour du regard des autres et du renoncement à l’alcool (vin, café).</li>
+          <li><strong>Régions&nbsp;:</strong> la mention du restaurant diverge selon les régions — l’Île-de-France et les Hauts-de-France en parlent plus, mais ce ne sont que des signaux (Île-de-France&nbsp;: restauration hors domicile et repas professionnels&nbsp;; Hauts-de-France&nbsp;: forte culture des repas conviviaux). À valider avec plus de répondants.</li>
+        </ul>
+      </details>
+      <ul class="liens boutons pleine-largeur">
+        <li><a class="bouton-lien" href="https://lnkd.in/p/gxZTBexV" target="_blank" rel="noopener"><span class="bl-ico" aria-hidden="true">🔗</span><span class="bl-txt"><span class="bl-titre">Voir le post sur LinkedIn</span></span></a></li>
+      </ul>
+      <p class="retour"><a href="#sommaire">↑ Sommaire</a></p>
+    </div>
+  </section>
+
+  <section id="art-2-2">
+    <h2><span class="h-ico" aria-hidden="true">🗺️</span>Cartographie des restaurants · 2/3</h2>
+    <div class="card">
+      <figure class="art-img"><button class="zoom" type="button" aria-label="Agrandir l’illustration"><img src="assets/images/article-2-carte.webp" width="900" height="472" alt="Baria-ressources : la cartographie des ressources locales pour les opérés bariatriques" loading="lazy"></button></figure>
+      <p>Mettons fin à un suspense insoutenable&nbsp;! Aller au restaurant, est-ce important&nbsp;? Oui.<br>
+      Voyons maintenant ce que les opérés m’ont confié.</p>
+      <p>Manger en société est la difficulté la plus fréquemment citée&nbsp;: 23&nbsp;% des 721 personnes ayant répondu à la question «&nbsp;qu’est-ce qui est difficile à vivre pour vous&nbsp;?&nbsp;». Et le lieu où elle se cristallise, c’est le restaurant.</p>
+      <p>«&nbsp;Perdre ma vie sociale&nbsp;: inviter, être invitée, sortir au restaurant.&nbsp;» me confiait une Française vivant à la campagne.</p>
+      <p>Deux frictions distinctes reviennent&nbsp;:</p>
+      <ul class="puces">
+        <li>En contexte amical ou professionnel&nbsp;: devoir expliquer son opération à un entourage plus ou moins proche. (Le cadre familial revient peu, car la famille proche est le plus souvent déjà au courant — mais pas toujours…) «&nbsp;Le restaurant est éprouvant&nbsp;: devoir toujours expliquer pourquoi on ne finit pas, ou qu’on mange peu.&nbsp;»</li>
+        <li>Face à des restaurateurs inconnus&nbsp;: devoir justifier de petites portions, ou le droit de manger «&nbsp;anormalement&nbsp;» lentement. Une Canadienne l’exprime très bien&nbsp;: «&nbsp;le restaurant n’accepte pas de faire des compromis&nbsp;».</li>
+      </ul>
+      <p>Reprenons la phrase du post 1&nbsp;: s’exposer, c’est prendre un risque social. Pour certains, cette appréhension devient un frein à la décision même de se faire opérer. «&nbsp;Aller au restaurant m’effraie&nbsp;», me confiait une opérée depuis moins d’un mois. Cette préoccupation s’exprime plus à moins de 2 ans post-op et chez les multi-opérés. Les enjeux en pré-op sont plus immédiats, avec la peur des complications*, et les futurs opérés expriment peu leur peur de perdre leur lien social.</p>
+      <p>La peur de ne plus vivre en société dépend de la capacité de l’opéré à reconstruire sa vie. Relativisons donc&nbsp;: pour environ 1 opéré sur 10 (parmi ceux qui ont répondu), ce n’est pas un sujet. Et pas de différence entre la France et le Québec — c’est vrai des deux côtés de l’Atlantique. .. Et bien évidemment, le traitement de la maladie ne doit pas être mis sur le même plan. Alors, pratiquement, on peut faire quoi&nbsp;?</p>
+      <p>Continuabitur…</p>
+      <p>👉 Liens vers les parties de la série + la carte en commentaire</p>
+      <details class="commentaire">
+        <summary>💬 En commentaire</summary>
+        <p>*Le sujet qui revient le plus souvent en pré-op, chez les non-opérés de mon enquête, c’est la peur des complications devant la peur de mourir&nbsp;: 15&nbsp;% contre 7&nbsp;%. Chez les opérés, le rapport s’inverse, ils se souviennent surtout de la peur de mourir&nbsp;: 16&nbsp;% contre 10&nbsp;% pour les complications. (Souvenirs des opérés vs anticipation des non-opérés — à interpréter avec prudence.) La peur de mourir doit être remise à son échelle, de l’ordre de 0,1&nbsp;%, et la mortalité toutes causes chute de 30 à 50&nbsp;% après chirurgie. Le vrai danger mesuré, ce n’est pas l’opération, c’est de rester en situation d’obésité.</p>
+      </details>
+      <ul class="liens boutons pleine-largeur">
+        <li><a class="bouton-lien" href="https://lnkd.in/p/ebhugWMd" target="_blank" rel="noopener"><span class="bl-ico" aria-hidden="true">🔗</span><span class="bl-txt"><span class="bl-titre">Voir le post sur LinkedIn</span></span></a></li>
+      </ul>
+      <p class="retour"><a href="#sommaire">↑ Sommaire</a></p>
+    </div>
+  </section>
+
+  <section id="art-2-1">
+    <h2><span class="h-ico" aria-hidden="true">🗺️</span>Cartographie des restaurants · 1/3</h2>
+    <div class="card">
+      <figure class="art-img"><button class="zoom" type="button" aria-label="Agrandir l’illustration"><img src="assets/images/article-2-carte.webp" width="900" height="472" alt="Baria-ressources : la cartographie des ressources locales pour les opérés bariatriques" loading="lazy"></button></figure>
+      <p>«&nbsp;Peur de paraître bête parce que je suis grosse.&nbsp;»<br>
+      Voilà la motivation principale qu’une patiente m’a confiée pour sa chirurgie bariatrique.</p>
+      <p>Évidemment, la première motivation des opérés reste médicale. Ma seconde enquête*, auprès de plus de 1&nbsp;000 opéré·es francophones, me l’a confirmé&nbsp;: santé (86&nbsp;%), mobilité (52&nbsp;%) et rémission des maladies liées à l’obésité (24&nbsp;%) sont des motivations pour 93&nbsp;% d’entre eux. C’est conforme aux études médicales. Ouf&nbsp;!</p>
+      <p>Cependant, 7&nbsp;% ne mentionnent pas d’enjeux médicaux. Ce qui m’intéressait spécifiquement, c’est de connaître leur motivation principale, et ce de façon anonyme… Alors quand je leur demande de ne garder qu’une seule motivation, les motifs médicaux tombent à 65&nbsp;%, et l’amélioration de la santé seule descend à 50&nbsp;%. La motivation médicale est comprise… mais elle ne suffit pas toujours, seule, à porter la décision. Pour environ un tiers des opérés, c’est donc un autre ressort qui prime&nbsp;: l’image de soi arrive en tête (~15&nbsp;%), ou pouvoir profiter de ses proches (~10&nbsp;%).</p>
+      <p>Une équipe pluridisciplinaire, qui accompagne la personne dans toute sa complexité, prend alors tout son sens&nbsp;: les motivations des opérés sont multiples et pas toujours exprimées frontalement.</p>
+      <p>Tout ça pour en arriver à une question que je me suis longtemps posée, au fil de mes échanges avec des opérés&nbsp;: Peut-on aller au restaurant après une chirurgie bariatrique&nbsp;?</p>
+      <p>Continuabitur…</p>
+      <p class="note">⚠️ *Enquête de terrain via le réseau associatif français et les réseaux sociaux, indicative, non représentative au sens épidémiologique.<br>
+      Réf.&nbsp;: «&nbsp;Patient Expectations of Bariatric Outcomes, Baseline, and Long-term Evaluation&nbsp;», Obesity Surgery, 2025 (n&nbsp;=&nbsp;242).</p>
+      <ul class="liens boutons pleine-largeur">
+        <li><a class="bouton-lien" href="https://lnkd.in/p/eiCcnRue" target="_blank" rel="noopener"><span class="bl-ico" aria-hidden="true">🔗</span><span class="bl-txt"><span class="bl-titre">Voir le post sur LinkedIn</span></span></a></li>
+      </ul>
+      <p class="retour"><a href="#sommaire">↑ Sommaire</a></p>
+    </div>
+  </section>
+
+  <section id="art-1">
+    <h2><span class="h-ico" aria-hidden="true">🌸</span>Obésité féminine&nbsp;: Partage d’expériences</h2>
+    <div class="card">
+      <figure class="art-img"><button class="zoom" type="button" aria-label="Agrandir l’illustration"><img src="assets/images/article-1.webp" width="746" height="251" alt="Webinaires Obésité et santé des femmes : les Centres Spécialisés de l’Obésité Occitanie-Est (CHU de Montpellier), Occitanie-Ouest (CHU de Toulouse) et la SERO Occitanie, avec le soutien et en collaboration avec le Conseil Interrégional de l’Ordre des Sages-Femmes, vous invitent à un cycle de webinaires Obésité et santé des femmes." loading="lazy"></button></figure>
+      <p>À travers mes échanges avec des personnes opérées de chirurgie bariatrique, des facteurs spécifiquement féminins de l’obésité me sont apparus. Ma première enquête m’a donné des métriques. Sur +1700 réponses, +30&nbsp;% estiment qu’un ou plusieurs facteurs gynécologiques interviennent dans leur obésité. Pas de différences notables entre Belgique, Canada et France&nbsp;: c’est un enjeu universel.</p>
+      <p>15 femmes affirment même que ces facteurs gynécologiques expliquent à eux seuls leur obésité.</p>
+      <p>À la fin de l’enquête, je leur ai enfin demandé qui participait au suivi. Aucune des 15 femmes qui considèrent un facteur gynécologique comme la cause principale de leur obésité n’avait inclus leur gynécologue dans leur parcours de soins. Et la seule qui l’a intégré n’est pas concernée par cet enjeu&nbsp;!</p>
+      <p>Il semble donc essentiel de traiter la question de l’aide à apporter aux patients pour leur permettre de mieux intégrer les liens entre causes de leur obésité et les réponses thérapeutiques adaptées.</p>
+      <p>La question, comment aider les patients à mieux intégrer les liens entre causes de l’obésité et les réponses thérapeutiques adaptées me semble essentielle.</p>
+      <p>Merci donc au centre Spécialisé de l’obésité Occitanie-Ouest - CHU Toulouse d’organiser un cycle de webinaires sur ce sujet&nbsp;!</p>
+      <ul class="liens boutons pleine-largeur">
+        <li><a class="bouton-lien" href="https://lnkd.in/p/gYXGBpNQ" target="_blank" rel="noopener"><span class="bl-ico" aria-hidden="true">🔗</span><span class="bl-txt"><span class="bl-titre">Voir le post sur LinkedIn</span></span></a></li>
+      </ul>
+      <p class="retour"><a href="#sommaire">↑ Sommaire</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p class="footer-icones">
+    <a href="https://www.instagram.com/otcbaria/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/otcbaria/" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.4 8.3H4.6V23H.4V8.3zM8.3 8.3h4v2h.06c.56-1.06 1.94-2.18 4-2.18 4.28 0 5.07 2.82 5.07 6.48V23h-4.2v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23H8.3V8.3z"/></svg>
+    </a>
+    <a id="lienMailFooter" href="#" aria-label="Écrire par courriel">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3.5 6l8.5 7 8.5-7"/></svg>
+    </a>
+  </p>
+</footer>
+
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Image en grand"><button class="fermer" type="button" aria-label="Fermer">×</button><img alt="" src=""></div>
+
+<script>
+// Adresse courriel assemblée à l'exécution (limite le moissonnage par les robots).
+(function(){
+  ['lienMailFooter'].forEach(function(id){
+    var a=document.getElementById(id);
+    if(a){a.href='mail'+'to:'+['otyrbasbaria','sfr.fr'].join('@');}
+  });
+})();
+// Couverture en plein écran
+(function(){
+  var lb=document.getElementById('lightbox'),im=lb.querySelector('img'),x=lb.querySelector('.fermer');
+  var zooms=[].slice.call(document.querySelectorAll('.zoom'));
+  if(!zooms.length)return;
+  var dernier=null;
+  function ouvre(zb){var i=zb.querySelector('img');im.src=i.currentSrc||i.src;im.alt=i.alt;dernier=zb;lb.classList.add('on');x.focus();}
+  function ferme(){lb.classList.remove('on');if(dernier)dernier.focus();}
+  zooms.forEach(function(zb){zb.addEventListener('click',function(){ouvre(zb);});});
+  lb.addEventListener('click',ferme);
+  x.addEventListener('click',function(e){e.stopPropagation();ferme();});
+  addEventListener('keydown',function(e){if(e.key==='Escape'&&lb.classList.contains('on'))ferme();});
+})();
+// Vitrine "Où le trouver ?" : met en avant l’offre choisie ; au doigt (pas de survol),
+// un premier contact prévisualise, un second confirme et ouvre le lien.
+(function(){
+  var v=document.getElementById('vitrine');
+  if(!v)return;
+  var items=[].slice.call(v.querySelectorAll('.v-item'));
+  var auDoigt=!matchMedia('(hover:hover)').matches;
+  v.addEventListener('click',function(e){
+    var lien=e.target.closest('.v-lien');
+    if(!lien)return;
+    var li=lien.closest('.v-item');
+    if(auDoigt && !li.classList.contains('actif')){
+      e.preventDefault();
+      items.forEach(function(i){i.classList.remove('actif');});
+      li.classList.add('actif');
+      v.classList.add('choisi');
+    }
+  });
+  document.addEventListener('click',function(e){
+    if(!v.contains(e.target)){items.forEach(function(i){i.classList.remove('actif');});v.classList.remove('choisi');}
+  });
+})();
+// Menu : ouverture du menu déroulant sur smartphone et tablette
+(function(){
+  var nav=document.getElementById('menu'),tg=document.querySelector('.menu-toggle');
+  if(!nav||!tg)return;
+  function ouvre(o){nav.classList.toggle('ouvert',o);tg.setAttribute('aria-expanded',o?'true':'false');tg.setAttribute('aria-label',o?'Fermer le menu':'Ouvrir le menu');}
+  tg.addEventListener('click',function(e){e.stopPropagation();ouvre(!nav.classList.contains('ouvert'));});
+  nav.addEventListener('click',function(e){if(e.target.closest('a'))ouvre(false);});
+  document.addEventListener('click',function(e){if(!nav.contains(e.target)&&!tg.contains(e.target))ouvre(false);});
+  addEventListener('keydown',function(e){if(e.key==='Escape'&&nav.classList.contains('ouvert')){ouvre(false);tg.focus();}});
+  addEventListener('resize',function(){if(innerWidth>1120)ouvre(false);});
+})();
+</script>
+<script data-goatcounter="https://ot78.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
