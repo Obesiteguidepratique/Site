@@ -11,13 +11,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <title>Articles publiés — Obésité guide pratique</title>
-<meta name="description" content="Articles publiés à partir des enquêtes « Les obésités : Partage de réalités » : obésité féminine et cartographie des restaurants.">
+<meta name="description" content="Articles publiés à partir des enquêtes « Les obésités : Partage de réalités » : « manger moins, bouger plus » à l’épreuve du vécu, cartographie des restaurants, obésité féminine.">
 <link rel="canonical" href="https://obesite-guide-pratique.eu/articles/articles.html">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="Obésité guide pratique">
 <meta property="og:title" content="Articles publiés — Obésité guide pratique">
-<meta property="og:description" content="Articles publiés à partir des enquêtes « Les obésités : Partage de réalités » : obésité féminine et cartographie des restaurants.">
+<meta property="og:description" content="Articles publiés à partir des enquêtes « Les obésités : Partage de réalités » : « manger moins, bouger plus » à l’épreuve du vécu, cartographie des restaurants, obésité féminine.">
 <meta property="og:url" content="https://obesite-guide-pratique.eu/articles/articles.html">
 <meta property="og:image" content="https://obesite-guide-pratique.eu/assets/images/og-image.jpg">
 <meta property="og:image:alt" content="Couverture du livre Obésité guide pratique patients">
@@ -205,6 +205,19 @@ details.commentaire p,details.commentaire ul{margin:10px 0 2px}
 .sommaire a{text-decoration:none;font-weight:600}
 .sommaire a:hover{text-decoration:underline}
 .retour{margin:14px 0 0;text-align:right;font-size:.88rem}
+
+/* Séries d’articles dépliables */
+details.serie{margin:18px 0 0;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.55);padding:0 18px;scroll-margin-top:84px}
+details.serie>summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;padding:16px 0;font-family:'Roboto',system-ui,sans-serif;font-weight:800;font-size:1.2rem;line-height:1.3;color:var(--violet-dark)}
+details.serie>summary::-webkit-details-marker{display:none}
+details.serie>summary::before{content:"▸";flex:none;color:var(--violet);font-size:1.1em;transition:transform .2s ease}
+details.serie[open]>summary::before{transform:rotate(90deg)}
+details.serie>summary .nb-parties{margin-left:auto;flex:none;font-family:'Work Sans',system-ui,sans-serif;font-weight:600;font-size:.8rem;color:var(--muted);white-space:nowrap}
+details.serie section{padding:22px 0 4px;border-top:1px solid var(--line);scroll-margin-top:84px}
+details.serie section h3{font-family:'Roboto',system-ui,sans-serif;color:var(--violet-dark);font-weight:800;font-size:1.15rem;line-height:1.3;margin:0 0 14px}
+details.serie section:last-child{padding-bottom:14px}
+@media (max-width:560px){details.serie{padding:0 12px}details.serie>summary{font-size:1.05rem;flex-wrap:wrap}details.serie>summary .nb-parties{margin-left:26px;flex-basis:100%}}
+@media (prefers-reduced-motion:reduce){details.serie>summary::before{transition:none}}
 </style>
 <noscript><style>.menu-toggle{display:none}nav.menu{display:block;position:static;box-shadow:none;border:0;padding:0 0 8px}nav.menu ul{flex-wrap:wrap}</style></noscript>
 </head>
@@ -242,16 +255,59 @@ details.commentaire p,details.commentaire ul{margin:10px 0 2px}
     <nav class="sommaire" id="sommaire" aria-label="Sommaire">
       <p class="sommaire-titre">Sommaire</p>
       <ul>
-        <li><a href="#art-2-3"><span aria-hidden="true">🗺️</span> Cartographie des restaurants · 3/3</a></li>
-        <li><a href="#art-2-2"><span aria-hidden="true">🗺️</span> Cartographie des restaurants · 2/3</a></li>
-        <li><a href="#art-2-1"><span aria-hidden="true">🗺️</span> Cartographie des restaurants · 1/3</a></li>
-        <li><a href="#art-1"><span aria-hidden="true">🌸</span> Obésité féminine&nbsp;: Partage d’expériences</a></li>
+        <li><a href="#serie-alimentation"><span aria-hidden="true">🍔</span> «&nbsp;Je ne comprends pas, je mange parfaitement, je fais du sport et je ne perds pas.&nbsp;»</a></li>
+        <li><a href="#serie-restaurants"><span aria-hidden="true">🗺️</span> Cartographie des restaurants</a></li>
+        <li><a href="#serie-feminine"><span aria-hidden="true">🌸</span> Obésité féminine&nbsp;: Partage d’expériences</a></li>
       </ul>
     </nav>
   </section>
 
+  <details class="serie" id="serie-alimentation" open>
+    <summary><span><span class="h-ico" aria-hidden="true">🍔</span>«&nbsp;Je ne comprends pas, je mange parfaitement, je fais du sport et je ne perds pas.&nbsp;»</span><span class="nb-parties">4 parties · 1 publiée</span></summary>
+
+  <section id="art-3-1">
+    <h3>Partie 1/4</h3>
+    <div class="card">
+      <p>Ce message revient constamment sur les forums de personnes opérées bariatriques.</p>
+      <p>«&nbsp;Manger moins, bouger plus&nbsp;»&nbsp;: un conseil de bon sens pour la population générale. On n’est pas très loin du «&nbsp;Mens sana in corpore sano&nbsp;» de Juvénal, ce qui ne nous rajeunit pas. Mais qu’en est-il pour les premières concernées&nbsp;?</p>
+      <p>Dans ma première enquête* (1&nbsp;771 répondant·es, plusieurs réponses possibles), des personnes opérées ou en parcours m’ont exprimé ce qu’elles pensaient avoir joué dans leur prise de poids. Confrontons donc leur réponse au filtre «&nbsp;Manger moins, bouger plus&nbsp;».<br>
+      → Seuls 5&nbsp;% n’évoquent que l’alimentation (contrôle ou déséquilibre), la sédentarité et/ou le manque de sport.<br>
+      → Le duo «&nbsp;manger moins, bouger plus&nbsp;» (un facteur alimentaire ET la sédentarité ou le manque de sport) est cité par 35&nbsp;% des répondant·es. Une minorité donc.</p>
+      <p>À l’inverse, plus du quart (27&nbsp;%) ne citent aucun de ces quatre facteurs. Pour elles, «&nbsp;manger moins, bouger plus&nbsp;» ne dit pas tout. Ces facteurs sont cependant bien présents&nbsp;: 73&nbsp;% citent au moins l’un des quatre. Mais dans la quasi-totalité des cas (94&nbsp;%), avec d’autres. Combien au total&nbsp;? 4 en moyenne. Près d’une personne sur quatre en cite six ou plus (23&nbsp;%), et seulement 9&nbsp;% n’en citent qu’une. Maladie simple&nbsp;? On repassera&nbsp;!</p>
+      <p>Regroupées en 5 grands domaines (alimentation, activité physique, psychologique, biologique et médical, habitudes de vie et contexte), les facteurs cités couvrent en moyenne près de 3 domaines&nbsp;: 86&nbsp;% des répondant·es en citent au moins deux, 60&nbsp;% au moins trois. Ce n’est pas un profil, c’est une palette. Cela rejoint ce que disent de nombreux professionnels&nbsp;: on devrait parler des obésités, au pluriel.</p>
+      <figure class="art-img"><button class="zoom" type="button" aria-label="Agrandir l’illustration"><img src="assets/images/article-3-palette.webp" width="1200" height="1200" style="max-width:min(100%,520px)" alt="Graphique en barres, « Une palette, pas un profil » : part des répondant·es selon le nombre de domaines de facteurs cités. 86 % en citent au moins 2, 60 % au moins 3." loading="lazy"></button></figure>
+      <p>Différence notable entre pays&nbsp;: les répondant·es du Québec/Canada citent plus la sédentarité ou le manque de sport (73&nbsp;% contre 54&nbsp;% en France&nbsp;; p&nbsp;&lt;&nbsp;0,0001). Je n’ai pas encore suffisamment de données pour aller plus loin, mais on peut estimer que l’environnement y joue probablement un rôle.</p>
+      <p>Ce que j’en retiens&nbsp;: «&nbsp;manger moins, bouger plus&nbsp;» est très rarement présenté comme facteur unique. Cela ne le rend ni faux ni inutile&nbsp;: cela raconte rarement toute l’histoire.</p>
+      <p>Certaines personnes opérées désemparées font «&nbsp;tout bien&nbsp;» sans que la balance bouge. Une alimentation cohérente et une activité physique sont des pré-requis indispensables. Mais l’accompagnement reçu couvre-t-il toute la palette des enjeux, et est-il accessible partout&nbsp;?</p>
+      <p>Continuabitur…</p>
+      <p class="note">⚠️ *Enquête de terrain via le réseau associatif français et les réseaux sociaux, déclarative, indicative, non représentative au sens épidémiologique. Questionnaire à cases à cocher&nbsp;: les facteurs cités sont ceux que les répondant·es perçoivent. Dates, bases et tests&nbsp;: en commentaire.</p>
+      <details class="commentaire">
+        <summary>📎 En commentaire&nbsp;: notes, bases et tests (1/4)</summary>
+        <ul class="puces">
+          <li>Enquête de terrain via le réseau associatif français et les réseaux sociaux&nbsp;: 1&nbsp;779 réponses reçues entre le 21/01/2025 et le 30/10/2026, 1&nbsp;771 exploitables (hors doublons et une réponse inexploitable). Questionnaire à cases à cocher (plusieurs réponses possibles).</li>
+          <li>Décompte des facteurs&nbsp;: sans l’option «&nbsp;régimes&nbsp;», ajoutée à partir de la 540<sup>e</sup> réponse (29/01/2025), pour rester comparable.</li>
+          <li>Sédentarité ou manque de sport&nbsp;: Québec/Canada (383 répondant·es) 73&nbsp;% contre France (1&nbsp;161) 54&nbsp;%&nbsp;; test du χ², p&nbsp;&lt;&nbsp;0,0001.</li>
+          <li>Associations, sans causalité établie.</li>
+        </ul>
+        <p><strong>💬 Complément&nbsp;: écart avec les données publiées</strong><br>
+        L’enquête la plus proche sur les raisons de la prise de poids&nbsp;: l’enquête Opinium pour l’Association européenne pour l’étude de l’obésité (EASO), menée en décembre 2014 auprès de 2&nbsp;005 adultes en France (grand public, pas des personnes opérées). 55&nbsp;% y reconnaissent le stress comme facteur contributif et 43&nbsp;% considèrent l’obésité comme un trouble génétique. Dans mon enquête (France, n&nbsp;=&nbsp;1&nbsp;161), 46&nbsp;% citent le stress et 39&nbsp;% la génétique&nbsp;: mêmes ordres de grandeur, mais les questions et les populations diffèrent.</p>
+        <p class="note">Source&nbsp;: <a href="https://easo.org/wp-content/uploads/2019/03/OBESITY_PERCEPTION_SURVEY_REPORT-FINAL.pdf" target="_blank" rel="noopener">rapport de l’enquête de perception de l’obésité, EASO</a></p>
+        <p>Mon échantillon n’est pas représentatif&nbsp;: la région Provence-Alpes-Côte d’Azur (PACA) regroupe 22&nbsp;% des opérés de France métropolitaine ayant répondu, contre 8&nbsp;% de la population. L’efficacité des associations de la région PACA explique la surreprésentation de cette région.</p>
+      </details>
+      <ul class="liens boutons pleine-largeur">
+        <li><a class="bouton-lien" href="https://lnkd.in/p/etUJW3bs" target="_blank" rel="noopener"><span class="bl-ico" aria-hidden="true">🔗</span><span class="bl-txt"><span class="bl-titre">Voir le post sur LinkedIn</span></span></a></li>
+      </ul>
+      <p class="retour"><a href="#sommaire">↑ Sommaire</a></p>
+    </div>
+  </section>
+
+  </details>
+
+  <details class="serie" id="serie-restaurants">
+    <summary><span><span class="h-ico" aria-hidden="true">🗺️</span>Cartographie des restaurants</span><span class="nb-parties">3 parties</span></summary>
+
   <section id="art-2-3">
-    <h2><span class="h-ico" aria-hidden="true">🗺️</span>Cartographie des restaurants · 3/3</h2>
+    <h3>Partie 3/3</h3>
     <div class="card">
       <figure class="art-img"><button class="zoom" type="button" aria-label="Agrandir l’illustration"><img src="assets/images/article-2-restaurant.webp" width="900" height="506" alt="Smartphone affichant la carte Baria-ressources, posé sur la table d’un restaurant" loading="lazy"></button></figure>
       <p class="note">(Posts précédents&nbsp;: le restaurant cristallise la difficulté sociale n°1 des opéré·es.)</p>
@@ -282,7 +338,7 @@ details.commentaire p,details.commentaire ul{margin:10px 0 2px}
   </section>
 
   <section id="art-2-2">
-    <h2><span class="h-ico" aria-hidden="true">🗺️</span>Cartographie des restaurants · 2/3</h2>
+    <h3>Partie 2/3</h3>
     <div class="card">
       <figure class="art-img"><button class="zoom" type="button" aria-label="Agrandir l’illustration"><img src="assets/images/article-2-carte.webp" width="900" height="472" alt="Baria-ressources : la cartographie des ressources locales pour les opérés bariatriques" loading="lazy"></button></figure>
       <p>Mettons fin à un suspense insoutenable&nbsp;! Aller au restaurant, est-ce important&nbsp;? Oui.<br>
@@ -310,7 +366,7 @@ details.commentaire p,details.commentaire ul{margin:10px 0 2px}
   </section>
 
   <section id="art-2-1">
-    <h2><span class="h-ico" aria-hidden="true">🗺️</span>Cartographie des restaurants · 1/3</h2>
+    <h3>Partie 1/3</h3>
     <div class="card">
       <figure class="art-img"><button class="zoom" type="button" aria-label="Agrandir l’illustration"><img src="assets/images/article-2-carte.webp" width="900" height="472" alt="Baria-ressources : la cartographie des ressources locales pour les opérés bariatriques" loading="lazy"></button></figure>
       <p>«&nbsp;Peur de paraître bête parce que je suis grosse.&nbsp;»<br>
@@ -329,8 +385,12 @@ details.commentaire p,details.commentaire ul{margin:10px 0 2px}
     </div>
   </section>
 
+  </details>
+
+  <details class="serie" id="serie-feminine">
+    <summary><span><span class="h-ico" aria-hidden="true">🌸</span>Obésité féminine&nbsp;: Partage d’expériences</span><span class="nb-parties">1 article</span></summary>
+
   <section id="art-1">
-    <h2><span class="h-ico" aria-hidden="true">🌸</span>Obésité féminine&nbsp;: Partage d’expériences</h2>
     <div class="card">
       <figure class="art-img"><button class="zoom" type="button" aria-label="Agrandir l’illustration"><img src="assets/images/article-1.webp" width="746" height="251" alt="Webinaires Obésité et santé des femmes : les Centres Spécialisés de l’Obésité Occitanie-Est (CHU de Montpellier), Occitanie-Ouest (CHU de Toulouse) et la SERO Occitanie, avec le soutien et en collaboration avec le Conseil Interrégional de l’Ordre des Sages-Femmes, vous invitent à un cycle de webinaires Obésité et santé des femmes." loading="lazy"></button></figure>
       <p>À travers mes échanges avec des personnes opérées de chirurgie bariatrique, des facteurs spécifiquement féminins de l’obésité me sont apparus. Ma première enquête m’a donné des métriques. Sur +1700 réponses, +30&nbsp;% estiment qu’un ou plusieurs facteurs gynécologiques interviennent dans leur obésité. Pas de différences notables entre Belgique, Canada et France&nbsp;: c’est un enjeu universel.</p>
@@ -345,6 +405,8 @@ details.commentaire p,details.commentaire ul{margin:10px 0 2px}
       <p class="retour"><a href="#sommaire">↑ Sommaire</a></p>
     </div>
   </section>
+
+  </details>
 
 </main>
 
@@ -406,6 +468,27 @@ details.commentaire p,details.commentaire ul{margin:10px 0 2px}
   document.addEventListener('click',function(e){
     if(!v.contains(e.target)){items.forEach(function(i){i.classList.remove('actif');});v.classList.remove('choisi');}
   });
+})();
+// Séries dépliables : un lien (sommaire, lien direct, « ↑ Sommaire ») ouvre la série qui contient la cible
+(function(){
+  function va(id,majUrl){
+    var el=id&&document.getElementById(decodeURIComponent(id));
+    if(!el)return false;
+    var d=el.closest('details.serie');
+    if(d&&!d.open)d.open=true;
+    if(el.matches('details.serie'))el.open=true;
+    el.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth',block:'start'});
+    if(majUrl&&history.replaceState)history.replaceState(null,'','#'+el.id);
+    return true;
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest('a[href^="#"]');
+    if(!a||a.getAttribute('href').length<2)return;
+    if(va(a.getAttribute('href').slice(1),true))e.preventDefault();
+  });
+  function depuisUrl(){if(location.hash.length>1)va(location.hash.slice(1),false);}
+  addEventListener('hashchange',depuisUrl);
+  addEventListener('load',depuisUrl);
 })();
 // Menu : ouverture du menu déroulant sur smartphone et tablette
 (function(){
